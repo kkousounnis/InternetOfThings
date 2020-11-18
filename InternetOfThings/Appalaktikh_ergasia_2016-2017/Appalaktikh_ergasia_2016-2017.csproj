@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF4DE1EC-A0AE-4312-9900-8482ADEF4175}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Appalaktikh_ergasia_2016_2017</RootNamespace>
+    <AssemblyName>Appalaktikh_ergasia_2016_2017</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>12.0.41002.1</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Compile Include="Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bath.xaml.cs">
+      <DependentUpon>Bath.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Elderhouse.xaml.cs">
+      <DependentUpon>Elderhouse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="House.xaml.cs">
+      <DependentUpon>House.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen.xaml.cs">
+      <DependentUpon>Kitchen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Programme.xaml.cs">
+      <DependentUpon>Programme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User1.xaml.cs">
+      <DependentUpon>User1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User1_options.xaml.cs">
+      <DependentUpon>User1_options.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Admin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Bath.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Elderhouse.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="House.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Kitchen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Programme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Simple Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="User1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="User1_options.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Images\aircondition-off.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\destination.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\food_board.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\kitchen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\snow.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\University.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Work.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\admin[1].jpg" />
+    <Resource Include="Images\aircondition-on.jpg" />
+    <Resource Include="Images\ambulance.jpg" />
+    <Resource Include="Images\Apartment-Living-Room.jpg" />
+    <Resource Include="Images\bath.jpg" />
+    <Resource Include="Images\boiler.jpg" />
+    <Resource Include="Images\boiler1.png" />
+    <Resource Include="Images\elder_room.jpg" />
+    <Resource Include="Images\fridje_in.jpg" />
+    <Resource Include="Images\medicine.jpg" />
+    <Resource Include="Images\med_ok.png" />
+    <Resource Include="Images\message.png" />
+    <Resource Include="Images\new_users.jpg" />
+    <Resource Include="Images\no.jpg" />
+    <Resource Include="Images\online_help.jpg" />
+    <Resource Include="Images\patient.jpg" />
+    <Resource Include="Images\red-button-on.png" />
+    <Resource Include="Images\red_button_off.png" />
+    <Resource Include="Images\closed.jpg" />
+    <Resource Include="Images\coffe-empty.jpeg" />
+    <Resource Include="Images\coffe_full.jpeg" />
+    <Resource Include="Images\door_closed.jpg" />
+    <Resource Include="Images\door_open.jpg" />
+    <Resource Include="Images\help_elderly.jpg" />
+    <Resource Include="Images\house_icon.png" />
+    <Resource Include="Images\ilektrikos.jpg" />
+    <Resource Include="Images\internetofthings.png" />
+    <Resource Include="Images\IOT_icon.png" />
+    <Resource Include="Images\ka8olou_kinisi.jpg" />
+    <Resource Include="Images\kinisi.jpg" />
+    <Resource Include="Images\lamp-off.jpg" />
+    <Resource Include="Images\lamp-on.jpg" />
+    <Resource Include="Images\leoforio.jpg" />
+    <Resource Include="Images\main_theme[1].jpg" />
+    <Resource Include="Images\metria_kinisi.jpg" />
+    <Resource Include="Images\off.jpg" />
+    <Resource Include="Images\on.jpg" />
+    <Resource Include="Images\pause_sound.png" />
+    <Resource Include="Images\play_sound.jpg" />
+    <Resource Include="Images\power-off.png" />
+    <Resource Include="Images\power-on.jpg" />
+    <Resource Include="Images\smile.jpeg" />
+    <Resource Include="Images\sun.jpg" />
+    <Resource Include="Images\switch-off.jpg" />
+    <Resource Include="Images\switch-on.jpg" />
+    <Resource Include="Images\taxi.jpg" />
+    <Resource Include="Images\turn-off-air-condition.png" />
+    <Resource Include="Images\user[1].jpg" />
+    <Resource Include="Images\vase.jpg" />
+    <Resource Include="Images\vase_broken.jpg" />
+    <Resource Include="Images\wave_sound.png" />
+    <Resource Include="Images\x.png" />
+    <Resource Include="Images\yes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1st_winform application.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\fridje_screen.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,451 @@
+﻿<Page
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	x:Class="Appalaktikh_ergasia_2016_2017.Admin"
+	x:Name="Page"
+	WindowTitle="Page"
+	FlowDirection="LeftToRight"
+	Width="1052" Height="548"
+	WindowWidth="640" WindowHeight="480">
+
+	<Grid x:Name="LayoutRoot">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="VisualStateGroup">
+				<VisualState x:Name="Appearmessage">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="t_orders">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Disappear"/>
+				<VisualState x:Name="Appearmeds">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="text_number">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="combo">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="combo">
+							<EasingDoubleKeyFrame KeyTime="0" Value="118.35"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="combo">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-1.259"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="text_xristis">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Dieuthinsi">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="L1">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="_098">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="L2">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="_099">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="L3">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="_100">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Appearusers">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button5">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button8">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button6">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button3">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button9">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button4">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button7">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="46.585"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-11.331"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Decline0">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button3">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button5">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button8">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button6">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button9">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button4">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button7">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Decline1">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button4">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button5">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button6">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button8">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button3">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button9">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button7">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Decline2">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button7">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button8">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button9">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button4">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button5">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button6">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button3">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Frame x:Name="admin_photo" Content="">
+			<Frame.Background>
+				<ImageBrush ImageSource="Images/elder_room.jpg"/>
+			</Frame.Background>
+		</Frame>
+		<Frame Content="" HorizontalAlignment="Left" Height="408.467" Margin="73.34,96.946,0,0" VerticalAlignment="Top" Width="913.343" Opacity="0.5">
+			<Frame.Background>
+				<ImageBrush ImageSource="Images/admin[1].jpg"/>
+			</Frame.Background>
+		</Frame>
+		<Rectangle x:Name="message_in" HorizontalAlignment="Left" Height="65.543" Margin="40.604,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="100.724" RadiusY="49.862" RadiusX="49.862">
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="Images/message.png"/>
+			</Rectangle.Fill>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseLeftButtonDown">
+					<ei:GoToStateAction StateName="Appearmessage"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Rectangle>
+		<Rectangle x:Name="meds" HorizontalAlignment="Left" Height="65.543" Margin="206.798,10,0,0" RadiusY="49.862" RadiusX="49.862" Stroke="Black" VerticalAlignment="Top" Width="115.833" MouseLeftButtonDown="meds_MouseLeftButtonDown">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseLeftButtonDown">
+					<ei:GoToStateAction StateName="Appearmeds"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="Images/medicine.jpg"/>
+			</Rectangle.Fill>
+		</Rectangle>
+		<Rectangle x:Name="users" HorizontalAlignment="Left" Height="65.543" Margin="419.577,10,0,0" RadiusY="49.862" RadiusX="49.862" Stroke="Black" VerticalAlignment="Top" Width="113.314">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseLeftButtonDown">
+					<ei:GoToStateAction StateName="Appearusers"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="Images/new_users.jpg"/>
+			</Rectangle.Fill>
+		</Rectangle>
+		<RichTextBox x:Name="t_orders" HorizontalAlignment="Left" Height="315.297" Margin="124.961,117.055,0,0" VerticalAlignment="Top" Width="787.439" FontSize="26.667" FontWeight="Bold" Visibility="Hidden">
+			<FlowDocument>
+				<Paragraph><Run Text="    x       Depon   Lexotanil   Bitamines"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="1)024"/><Run Text=":"/><Run Language="el-gr" Text="2"/><Run Text="Depon  4 lexotanil  1"/><Run Language="el-gr" Text="Βιταμινη"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="2)045"/><Run Text=":1Depon 1 lexotanil  2"/><Run Language="el-gr" Text="Βιταμινες"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="3)087"/><Run Text=":"/><Run Language="el-gr" Text="9"/><Run Text="Depon 5 lexotanil 3"/><Run Language="el-gr" Text="Βιταμίνες"/><Run Text="t "/></Paragraph>
+			</FlowDocument>
+		</RichTextBox>
+		<Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="37.771" Margin="887.943,108.278,0,0" Opacity="0" RadiusY="49.862" RadiusX="49.862" Stroke="Black" VerticalAlignment="Top" Width="40.289" RenderTransformOrigin="0.5,0.5">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseLeftButtonDown">
+					<ei:GoToStateAction StateName="Disappear"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="Images/x.png"/>
+			</Rectangle.Fill>
+		</Rectangle>
+		<ComboBox x:Name="combo" HorizontalAlignment="Left" Margin="124.961,171.23,0,0" VerticalAlignment="Top" Width="120" Height="26.996" Visibility="Hidden" RenderTransformOrigin="0.5,0.5">
+			<ComboBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ComboBox.RenderTransform>
+		</ComboBox>
+		<TextBox x:Name="text_number" HorizontalAlignment="Left" Height="23" Margin="244.57,236.399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+		<Button x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="244.57,390.303,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Visibility="Hidden"/>
+		<TextBox x:Name="text_xristis" HorizontalAlignment="Left" Height="23" Margin="244.57,280.466,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+		<TextBox x:Name="Dieuthinsi" HorizontalAlignment="Left" Height="23" Margin="244.57,332.388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+		<Label x:Name="label" Content="Ποσοτητα" HorizontalAlignment="Left" Margin="119.961,236.399,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+		<Label x:Name="label1" Content="Αριθμός_Χρηστη" HorizontalAlignment="Left" Margin="119.961,280.466,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+		<Label x:Name="label2" Content="Διευθυνση" HorizontalAlignment="Left" Margin="119.961,337.438,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+		<Button x:Name="button2" Content="ACCEPT" HorizontalAlignment="Left" Margin="631.097,132.199,0,0" VerticalAlignment="Top" Width="112.771" Height="48.918" Click="Button_Click_1" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="Decline0"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="button5" Content="ACCEPT" HorizontalAlignment="Left" Margin="631.097,236.399,0,0" VerticalAlignment="Top" Width="112.771" Height="48.918" Click="Button_Click_2" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="Decline1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="button8" Content="ACCEPT" HorizontalAlignment="Left" Margin="631.097,333.969,0,0" VerticalAlignment="Top" Width="112.771" Height="48.918" Click="Button_Click_3" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="Decline2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="button6" Content="DECLINE" HorizontalAlignment="Left" Margin="799.629,236.399,0,0" VerticalAlignment="Top" Width="112.771" Height="48.918" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="Decline1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="button3" Content="DECLINE" HorizontalAlignment="Left" Margin="799.629,132.199,0,0" VerticalAlignment="Top" Width="112.771" Height="48.918" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="Decline0"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="button9" Content="DECLINE" HorizontalAlignment="Left" Margin="799.629,333.969,0,0" VerticalAlignment="Top" Width="112.771" Height="48.918" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="Decline2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="150.927,159.533,0,0" TextWrapping="Wrap" Text="098" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
+		<TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="150.927,258.717,0,0" TextWrapping="Wrap" Text="099" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
+		<TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="150.927,356.287,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
+		<Button x:Name="button1" Content="Λεπτομεριες" HorizontalAlignment="Left" Margin="369.57,133.823,0,0" VerticalAlignment="Top" Width="100.181" Height="47.294" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="L1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="button4" Content="Λεπτομεριες" HorizontalAlignment="Left" Margin="369.57,238.023,0,0" VerticalAlignment="Top" Width="100.181" Height="47.294" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="L2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="button7" Content="Λεπτομεριες" HorizontalAlignment="Left" Margin="369.57,337.438,0,0" VerticalAlignment="Top" Width="100.181" Height="47.294" Visibility="Hidden">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="L3"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<RichTextBox x:Name="_098" HorizontalAlignment="Left" Height="289.174" Margin="276.046,121.089,0,0" VerticalAlignment="Top" Width="297.67" FontSize="26.667" FontWeight="Bold" Visibility="Hidden">
+			<FlowDocument>
+				<Paragraph><Run Language="el-gr" Text="Γιώργος"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="59 ετων"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="Χαλανδρι"/></Paragraph>
+			</FlowDocument>
+		</RichTextBox>
+		<RichTextBox x:Name="_099" HorizontalAlignment="Left" Height="289.174" Margin="276.046,121.089,0,0" VerticalAlignment="Top" Width="297.67" FontSize="26.667" FontWeight="Bold" Visibility="Hidden">
+			<FlowDocument>
+				<Paragraph><Run Language="el-gr" Text="Μακης"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="33 ετων"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="Γαλατσι"/></Paragraph>
+			</FlowDocument>
+		</RichTextBox>
+		<RichTextBox x:Name="_100" HorizontalAlignment="Left" Height="289.174" Margin="276.046,121.089,0,0" VerticalAlignment="Top" Width="297.67" FontSize="26.667" FontWeight="Bold" Visibility="Hidden">
+			<FlowDocument>
+				<Paragraph><Run Language="el-gr" Text="Νικος"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="78 ετων"/></Paragraph>
+				<Paragraph><Run Language="el-gr" Text="Νεα Φιλαδελφια"/></Paragraph>
+				<Paragraph><Run Language="el-gr"/></Paragraph>
+			</FlowDocument>
+		</RichTextBox>
+		<Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="41.548" Margin="531.632,104.501,0,0" Opacity="0" RadiusY="49.862" RadiusX="49.862" Stroke="Black" VerticalAlignment="Top" Width="44.067">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseLeftButtonDown">
+					<ei:GoToStateAction StateName="Appearusers"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="Images/x.png"/>
+			</Rectangle.Fill>
+		</Rectangle>
+		<Rectangle x:Name="leave" HorizontalAlignment="Left" Height="51.693" Margin="963.485,10,0,0" RadiusY="49.862" RadiusX="49.862" Stroke="Black" VerticalAlignment="Top" Width="59.176" MouseLeftButtonDown="leave_MouseLeftButtonDown">
+			<Rectangle.Fill>
+				<ImageBrush ImageSource="Images/user[1].jpg"/>
+			</Rectangle.Fill>
+		</Rectangle>
+	</Grid>
+</Page>

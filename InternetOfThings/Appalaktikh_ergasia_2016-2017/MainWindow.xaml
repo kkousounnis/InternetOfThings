@@ -1,0 +1,87 @@
+﻿<Window x:Class="Appalaktikh_ergasia_2016_2017.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IOT" Height="648" Width="1152" Icon="Images/IOT_icon.png">
+    <Window.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="frame">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="grid">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF00FAFF"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1_Copy">
+            	<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="online_help">
+            	<EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid x:Name="grid" Width="1152" Height="648" Background="Black">
+        <Frame x:Name="frame" Content="" Opacity="0" Margin="-10,0,10,0" Navigated="frame_Navigated">
+            <Frame.Background>
+                <ImageBrush ImageSource="Images/internetofthings.png"/>
+            </Frame.Background>
+        </Frame>
+        <TextBlock x:Name="textBlock" Margin="507.54,292.101,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="24" Width="102.634" FontStyle="Italic" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top"><Run Text="HELLO!!!"/><LineBreak/><Run/></TextBlock>
+        <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="191.102" Margin="738.076,183.497,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="292.718" Opacity="0" MouseLeftButtonDown="rectangle1_MouseLeftButtonDown">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/admin[1].jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="260.322,414.952,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Height="26.577" Width="81.42" FontWeight="Bold" FontSize="21.333" Opacity="0"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="798.742,418.509,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="21.333" Opacity="0"><Run Text="Admin"/><LineBreak/><Run/></TextBlock>
+        <Rectangle x:Name="rectangle1_Copy" HorizontalAlignment="Left" Height="192" Margin="127,183,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="293" MouseDown="rectangle1_Copy_MouseDown" Opacity="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/user[1].jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="online_help" HorizontalAlignment="Left" Height="59.15" Margin="28.271,31.234,0,0" Stroke="Black" VerticalAlignment="Top" Width="72.801" RadiusY="35.9" RadiusX="35.9" Opacity="0" MouseLeftButtonDown="online_help_MouseLeftButtonDown">
+        	<Rectangle.Fill>
+        		<ImageBrush ImageSource="Images/online_help.jpg"/>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <RichTextBox x:Name="t_help" HorizontalAlignment="Left" Height="432.152" Margin="154.155,79.767,0,0" VerticalAlignment="Top" Width="809.804" FontSize="20" FontWeight="Bold" Visibility="Hidden">
+        	<FlowDocument>
+        		<Paragraph><Run Text="1)"/><Run FontSize="26.667" Text="E"/><Run FontSize="26.667" Language="el-gr" Text="πιλογη να μπεις με αριστερο κλικ σαν "/><Run FontSize="26.667" Text="user "/></Paragraph>
+        		<Paragraph><Run FontSize="26.667" Text="2)"/><Run FontSize="26.667" Language="el-gr" Text="Επιλογή να μπεις με αριστερο κλικ με το ποντικη σαν μελος των κοινωνικών υπηρεσιων.Εκει εχει τις εξης επιλογες"/></Paragraph>
+        		<Paragraph><Run FontSize="26.667" Language="el-gr" Text=" α)Πανω αριστερα τα μυνηματα που έχει να δει ο κοινωνινκος λειτουργος με αριστερο κλικ τα ανοιγει."/></Paragraph>
+        		<Paragraph><Run FontSize="26.667" Language="el-gr" Text=" β) Στην μεση εχει να φτιαξει ο κοινωνικος λειτουργός τις παραγγελίες που κάνει ο ηλικιομένος  για τα φαρμακα του "/></Paragraph>
+        		<Paragraph><Run FontSize="26.667" Language="el-gr" Text=" γ)Πανω δεξια εχει τα αιτηματα για να κάνει "/><Run FontSize="26.667" Text="add "/><Run FontSize="26.667" Language="el-gr" Text="τα νεα μελοι"/></Paragraph>
+        		<Paragraph><Run FontSize="26.667" Language="el-gr" Text="με το Χ ανοιγουν κλεινουν τα παραθυρα που ανοιγουν"/></Paragraph>
+        	</FlowDocument>
+        </RichTextBox>
+        <Rectangle x:Name="x" HorizontalAlignment="Left" Height="50.051" Margin="939.794,57.017,0,0" RadiusY="35.9" RadiusX="35.9" Stroke="Black" VerticalAlignment="Top" Width="39.433" MouseLeftButtonDown="x_MouseLeftButtonDown" Visibility="Hidden">
+        	<Rectangle.Fill>
+        		<ImageBrush ImageSource="Images/x.png"/>
+        	</Rectangle.Fill>
+        </Rectangle>
+
+    </Grid>
+</Window>

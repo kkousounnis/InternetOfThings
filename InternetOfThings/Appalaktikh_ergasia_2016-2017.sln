@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appalaktikh_ergasia_2016-2017", "Appalaktikh_ergasia_2016-2017\Appalaktikh_ergasia_2016-2017.csproj", "{cf4de1ec-a0ae-4312-9900-8482adef4175}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF4DE1EC-A0AE-4312-9900-8482ADEF4175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4DE1EC-A0AE-4312-9900-8482ADEF4175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4DE1EC-A0AE-4312-9900-8482ADEF4175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4DE1EC-A0AE-4312-9900-8482ADEF4175}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

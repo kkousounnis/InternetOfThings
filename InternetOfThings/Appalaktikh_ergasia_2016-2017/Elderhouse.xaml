@@ -1,0 +1,407 @@
+﻿<Page
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	x:Class="Appalaktikh_ergasia_2016_2017.Elderhouse"
+	x:Name="Page"
+	WindowTitle="Page"
+	FlowDirection="LeftToRight"
+	Width="1052" Height="548"
+	WindowWidth="640" WindowHeight="480">
+
+    <Grid x:Name="LayoutRoot">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="BrokenVase_appear">
+                <VisualState x:Name="Vase1">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vase1">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Vase2">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vase2">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Vase3">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vase3">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Vase4">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vase4">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Vase5">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vase5">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Vase6">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vase6">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Vase7">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vase7">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Vase8">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vase8">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+            <VisualStateGroup x:Name="VisualStateGroup">
+            	<VisualState x:Name="Appearhelp1">
+            		<Storyboard>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="frame_patient">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="yes">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="No">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ask">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="t_number">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            		</Storyboard>
+            	</VisualState>
+            	<VisualState x:Name="diassappear">
+            		<Storyboard>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="frame_patient">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="t_number">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            		</Storyboard>
+            	</VisualState>
+            </VisualStateGroup>
+            <VisualStateGroup x:Name="doorchange">
+            	<VisualState x:Name="dooropen">
+            		<Storyboard>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="door_open">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="door_open">
+            				<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            			</DoubleAnimationUsingKeyFrames>
+            		</Storyboard>
+            	</VisualState>
+            	<VisualState x:Name="doorclose"/>
+            </VisualStateGroup>
+            <VisualStateGroup x:Name="Medorder">
+            	<VisualState x:Name="medok">
+            		<Storyboard>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="medicine_ok">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="t_med">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="x">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            		</Storyboard>
+            	</VisualState>
+            	<VisualState x:Name="desappear1">
+            		<Storyboard>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="medicine_ok">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="t_med">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="x">
+            				<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            			</ObjectAnimationUsingKeyFrames>
+            		</Storyboard>
+            	</VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Frame x:Name="frame_elder_house" Content="">
+            <Frame.Background>
+                <ImageBrush ImageSource="Images/elder_room.jpg"/>
+            </Frame.Background>
+        </Frame>
+        <Rectangle HorizontalAlignment="Left" Height="60.2" Margin="378.023,109.777,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="63.741" MouseMove="Rectangle_MouseMove">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase.jpg"/>
+            </Rectangle.Fill>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseMove">
+                    <ei:GoToStateAction StateName="Vase1"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Rectangle>
+        <Rectangle x:Name="___No_Name_" HorizontalAlignment="Left" Height="28.33" Margin="536.196,53.118,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="37.773">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseMove">
+                    <ei:GoToStateAction StateName="Vase2"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="49.243" Margin="265.885,244.342,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="58.686">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseMove">
+                    <ei:GoToStateAction StateName="Vase3"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="40.133" Margin="110.072,230.178,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="49.577">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseMove">
+                    <ei:GoToStateAction StateName="Vase4"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="68.463" Margin="929.269,244.342,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="60.2">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseMove">
+                    <ei:GoToStateAction StateName="Vase5"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="59.02" Margin="334.348,406.057,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="79.087">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseMove">
+                    <ei:GoToStateAction StateName="Vase6"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="44.855" Margin="775.817,406.057,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="61.381">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseMove">
+                    <ei:GoToStateAction StateName="Vase7"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="36.592" Margin="975.304,465.077,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="38.953">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseMove">
+                    <ei:GoToStateAction StateName="Vase8"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="vase1" HorizontalAlignment="Left" Height="60.2" Margin="378.023,109.777,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="63.741" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="Appearhelp1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase_broken.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="vase2" HorizontalAlignment="Left" Height="28.33" Margin="536.227,53.118,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="37.773" RenderTransformOrigin="1.594,2.125" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="Appearhelp1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase_broken.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="vase3" HorizontalAlignment="Left" Height="49.243" Margin="265.885,244.342,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="58.686" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="Appearhelp1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase_broken.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="vase4" HorizontalAlignment="Left" Height="33.385" Margin="110.072,230.178,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="49.577" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="Appearhelp1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase_broken.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="vase5" HorizontalAlignment="Left" Height="68.463" Margin="910.383,244.342,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="79.086" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="Appearhelp1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase_broken.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="vase6" HorizontalAlignment="Left" Height="55.077" Margin="334.348,406.057,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="76.726" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="Appearhelp1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase_broken.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="vase7" HorizontalAlignment="Left" Height="44.855" Margin="775.817,406.057,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="61.381" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="Appearhelp1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase_broken.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="vase8" HorizontalAlignment="Left" Height="36.592" Margin="975.304,465.077,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="38.953" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="Appearhelp1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/vase_broken.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Frame x:Name="frame_patient" Content="" HorizontalAlignment="Left" Height="413" Margin="266,97,0,0" VerticalAlignment="Top" Width="627" Visibility="Hidden">
+            <Frame.Background>
+                <ImageBrush ImageSource="Images/patient.jpg"/>
+            </Frame.Background>
+        </Frame>
+        <Rectangle x:Name="yes" HorizontalAlignment="Left" Height="177" Margin="307,244,0,0" Stroke="Black" VerticalAlignment="Top" Width="267" MouseLeftButtonDown="yes_MouseLeftButtonDown" Visibility="Hidden">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/yes.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="No" HorizontalAlignment="Left" Height="177" Margin="615,244,0,0" Stroke="Black" VerticalAlignment="Top" Width="254" MouseLeftButtonDown="No_MouseLeftButtonDown" Visibility="Hidden">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/no.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="ask" HorizontalAlignment="Left" Margin="324.571,143.851,0,0" TextWrapping="Wrap" Text="Ειστε καλά?" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Visibility="Hidden"/>
+        <TextBlock x:Name="t_number" HorizontalAlignment="Left" Margin="506.69,23.45,0,0" TextWrapping="Wrap" Text="              " VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Height="147" Width="180" Visibility="Hidden"/>
+        <Frame x:Name="frame_smile" Content="" HorizontalAlignment="Left" Height="413.207" Margin="266,96.793,0,0" VerticalAlignment="Top" Width="627" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="diassappear"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+        	<Frame.Background>
+        		<ImageBrush ImageSource="Images/smile.jpeg"/>
+        	</Frame.Background>
+        </Frame>
+        <Frame x:Name="frame_ambulance" Content="" HorizontalAlignment="Left" Height="413" Margin="266,97,0,0" VerticalAlignment="Top" Width="627" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="diassappear"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+        	<Frame.Background>
+        		<ImageBrush ImageSource="Images/ambulance.jpg"/>
+        	</Frame.Background>
+        </Frame>
+        <TextBlock x:Name="t_koinonikes_ipiresies" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" Height="74.123" Width="409.684" Text="Εχουν ειδοποιηθεί  οι κοινωνικές υπηρεσίες" Margin="378.023,17.67,0,0" Background="#FFFFE6E6" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseMove">
+        			<ei:GoToStateAction StateName="diassappear"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+        </TextBlock>
+        <TextBlock x:Name="t_siggenist_siggenis" HorizontalAlignment="Left" Margin="348.711,24.863,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="54.728" Width="467.244" Background="#FFFFE6E6" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseLeftButtonDown">
+        			<ei:GoToStateAction StateName="diassappear"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers><Run Text="Εχουν ειδοποιηθεί  οι δικοί σας άνθρωποι"/></TextBlock>
+        <Rectangle x:Name="door_closed" HorizontalAlignment="Left" Height="56.696" Margin="957.443,26.121,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="69.262" MouseDown="Rectangle_MouseDown">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseEnter">
+        			<ei:GoToStateAction StateName="dooropen"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+        	<Rectangle.Fill>
+        		<ImageBrush ImageSource="Images/door_closed.jpg"/>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="door_open" HorizontalAlignment="Left" Height="56.696" Margin="957.443,26.121,0,0" RadiusY="129.934" RadiusX="129.934" Stroke="Black" VerticalAlignment="Top" Width="69.262" MouseDown="Rectangle_MouseDown" Opacity="0" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseLeave">
+        			<ei:GoToStateAction StateName="doorclose"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+        	<Rectangle.Fill>
+        		<ImageBrush ImageSource="Images/door_open.jpg"/>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="med_order" HorizontalAlignment="Left" Height="74.123" Margin="23.607,17.67,0,0" Stroke="Black" VerticalAlignment="Top" Width="81.838" RadiusY="40.419" RadiusX="40.419">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseLeftButtonDown">
+        			<ei:GoToStateAction StateName="medok"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+        	<Rectangle.Fill>
+        		<ImageBrush ImageSource="Images/medicine.jpg"/>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Frame x:Name="medicine_ok" Content="" HorizontalAlignment="Left" Height="336.701" Margin="222.536,97,0,0" VerticalAlignment="Top" Width="706.733" Visibility="Hidden">
+        	<Frame.Background>
+        		<ImageBrush ImageSource="Images/med_ok.png"/>
+        	</Frame.Background>
+        </Frame>
+        <TextBlock x:Name="t_med" HorizontalAlignment="Left" Margin="245.199,109.777,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="33.333" Text="Ευχαριστουμε πολύ σε 5 μερες θα βρισκονται στο σπιτι σας&#xD;&#xA;" Background="#FFFFE6E6" Width="542.508" Visibility="Hidden"/>
+        <Rectangle x:Name="x" HorizontalAlignment="Left" Height="32.646" Margin="893,92,0,0" RadiusY="40.419" RadiusX="40.419" Stroke="Black" VerticalAlignment="Top" Width="36.269" Visibility="Hidden">
+        	<i:Interaction.Triggers>
+        		<i:EventTrigger EventName="MouseLeftButtonDown">
+        			<ei:GoToStateAction StateName="desappear1"/>
+        		</i:EventTrigger>
+        	</i:Interaction.Triggers>
+        	<Rectangle.Fill>
+        		<ImageBrush ImageSource="Images/x.png"/>
+        	</Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</Page>
